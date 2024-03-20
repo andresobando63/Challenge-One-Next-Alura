@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <img class="logo-alura" src="Imagenes/Logo.svg" alt="logo-alura">
+    </header>
+    <main>
+        <section class="seccion-1">
+            <div class="contenedor-texto">
+                <textarea class="caja-texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="mensaje-alerta">
+                <img src="Imagenes/alerta.svg" alt="icono-alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-boton-encriptar-decencriptar">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <div class="contenedor-imagen-sin-encriptar">
+                <img class="img" src="Imagenes/Imgen-sin-encriptar.svg" alt="imagen-sin-encriptar">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="contenedor-resultado">
+                <p class="resultado-texto"></p>
+            </div>
+            <div class="contenedor-boton-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy;2024 Andrés Obando</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
